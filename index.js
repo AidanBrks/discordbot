@@ -5,9 +5,10 @@ require('dotenv').config()
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
-        activity: { name: 'Version 0.0.1' },
+        activity: { name: process.env.VER },
         status: 'online'
     })
+
 });
 
 client.on('message', msg => {
