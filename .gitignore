@@ -69,8 +69,10 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
+# .env.example stays tracked on purpose
 .env
-.env.test
+.env.*
+!.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -102,3 +104,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# OS metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor workspace files
+.idea/
+*.swp
+.vscode-test
